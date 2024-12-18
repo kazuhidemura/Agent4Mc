@@ -1,0 +1,4664 @@
+[
+  {
+    "block": "air",
+    "position": {
+      "x": 105,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 105,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 105,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 84,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 85,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 85,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 86,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 86,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 86,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 87,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 87,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 87,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 88,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 88,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 89,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 89,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 89,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 85,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 86,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 87,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 88,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 88,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 88,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 89,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 85,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 86,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 86,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 87,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 84,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 85,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 86,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -156
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 84,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 84,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 85,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 85,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -156
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 84,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 84,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 85,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -156
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 83,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 84,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 84,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 83,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 83,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 83,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -156
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 83,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 83,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 83,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 83,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -156
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 108,
+      "y": 82,
+      "z": -159
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 107,
+      "y": 82,
+      "z": -161
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 106,
+      "y": 82,
+      "z": -162
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 106,
+      "y": 82,
+      "z": -163
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 106,
+      "y": 82,
+      "z": -164
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 105,
+      "y": 82,
+      "z": -164
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 87,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 88,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 89,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 86,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 89,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 89,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 88,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 88,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 85,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 87,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 87,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -156
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 84,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -156
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -156
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 83,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -156
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 82,
+      "z": -159
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 107,
+      "y": 82,
+      "z": -162
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 85,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 88,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 89,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 88,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 87,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 84,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 87,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 86,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 85,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 83,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 84,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 83,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 86,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 88,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 89,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 89,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 89,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 85,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 87,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 88,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 88,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 87,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 87,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 84,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 86,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 86,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 85,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 85,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 84,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 84,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 83,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 83,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 83,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -157
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 82,
+      "z": -160
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 108,
+      "y": 82,
+      "z": -162
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 107,
+      "y": 82,
+      "z": -163
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 86,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 87,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 88,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 89,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 88,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 87,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 88,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 86,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 87,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 87,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 84,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 83,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 110,
+      "y": 82,
+      "z": -160
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 85,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 86,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 88,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 85,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 87,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 89,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 89,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 88,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 87,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 84,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 86,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 85,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 85,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 85,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 83,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 84,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 84,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 83,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 83,
+      "z": -158
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 110,
+      "y": 82,
+      "z": -161
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 85,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 87,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 88,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 88,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 89,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 87,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 88,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 86,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 87,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 85,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 86,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 85,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 84,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 84,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 84,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 83,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 83,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 83,
+      "z": -159
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 108,
+      "y": 82,
+      "z": -163
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 88,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 89,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 87,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 88,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 89,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 87,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 88,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 86,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 87,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 85,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 86,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 86,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 85,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 85,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 84,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 84,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 84,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 83,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 83,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 83,
+      "z": -160
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 111,
+      "y": 82,
+      "z": -162
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 107,
+      "y": 82,
+      "z": -164
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 85,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 87,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 89,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 89,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 88,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 87,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 87,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 86,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 85,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 84,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 83,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 82,
+      "z": -163
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 86,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 88,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 88,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 89,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 87,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 88,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 86,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 87,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 88,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 87,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 85,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 86,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 86,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 85,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 85,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 84,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 84,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 85,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 84,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 84,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 83,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 83,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 83,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 83,
+      "z": -161
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 111,
+      "y": 82,
+      "z": -163
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 108,
+      "y": 82,
+      "z": -164
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 105,
+      "y": 82,
+      "z": -165
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 87,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 88,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 89,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 89,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 88,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 87,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 87,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 88,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 86,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 87,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 86,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 85,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 85,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 85,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 86,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 84,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 84,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 84,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 83,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 83,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 83,
+      "z": -162
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 82,
+      "z": -164
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 88,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 88,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 89,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 89,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 87,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 87,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 88,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 86,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 87,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 86,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 85,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 86,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 85,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 85,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 84,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 83,
+      "z": -163
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 111,
+      "y": 82,
+      "z": -164
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 105,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 89,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 88,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 106,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 87,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 86,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 86,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 85,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 85,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 84,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 83,
+      "z": -164
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 106,
+      "y": 82,
+      "z": -165
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 85,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 85,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 86,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 87,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 87,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 88,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 88,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 89,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 89,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 87,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 88,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 89,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 86,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 87,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 88,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 86,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 87,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 85,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 86,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 86,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 85,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 85,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 85,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 107,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 84,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 83,
+      "z": -165
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 111,
+      "y": 82,
+      "z": -165
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 82,
+      "z": -165
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 108,
+      "y": 82,
+      "z": -165
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 107,
+      "y": 82,
+      "z": -165
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 89,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 88,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 87,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 88,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 87,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 86,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 86,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 86,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 85,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 85,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 85,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 84,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 84,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 84,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 83,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 83,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 83,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 87,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 88,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 88,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 88,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 89,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 86,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 87,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 86,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 87,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 85,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 85,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 86,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 84,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 85,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 85,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 86,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 84,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 84,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 84,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 110,
+      "y": 83,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 111,
+      "y": 83,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 83,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 115,
+      "y": 83,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 111,
+      "y": 82,
+      "z": -166
+    },
+    "tag": "通常ブロック"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 86,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 86,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 87,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 89,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 89,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 85,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 88,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 88,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 85,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 87,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 87,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 88,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 86,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 114,
+      "y": 87,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 84,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 84,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 85,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 86,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 85,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 84,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 84,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 108,
+      "y": 83,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 109,
+      "y": 83,
+      "z": -166
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 112,
+      "y": 83,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "air",
+    "position": {
+      "x": 113,
+      "y": 83,
+      "z": -167
+    },
+    "tag": "空気"
+  },
+  {
+    "block": "bedrock",
+    "position": {
+      "x": 109,
+      "y": 82,
+      "z": -166
+    },
+    "tag": "通常ブロック"
+  }
+]
