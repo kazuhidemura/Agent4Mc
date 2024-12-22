@@ -41,17 +41,18 @@ function move_commands(cmd, username, bot) {
       return;
     }
 
-    const loadedData = load(param); // データをロード
+    const loadedData = load(param ,bot); // データをロード
+    const loadedBlockData = loadedData.blocks
     if (loadedData.length === 0) {
       bot.chat(`データが空または '${param}' は存在しません。`);
       return;
     }
 
     if (param_2 === "-r") { // 上書き
-      TaggedBlockList = loadedData;
+      TaggedBlockList = loadedBlockData;
       bot.chat(`ブロックデータを '${param}' からロードし、上書きしました。`);
     } else if (param_2 === "-u") { // 更新（重複するものは上書き）
-      loadedData.forEach(newBlock => {
+      loadedBlockData.forEach(newBlock => {
         const index = TaggedBlockList.findIndex(existingBlock =>
           existingBlock.x === newBlock.x &&
           existingBlock.y === newBlock.y &&
@@ -65,7 +66,7 @@ function move_commands(cmd, username, bot) {
       });
       bot.chat(`ブロックデータを '${param}' からロードし、更新しました。`);
     } else if (param_2 === "-a") { // 追加（重複を無視）
-      loadedData.forEach(newBlock => {
+      loadedBlockData.forEach(newBlock => {
         const exists = TaggedBlockList.some(existingBlock =>
           existingBlock.x === newBlock.x &&
           existingBlock.y === newBlock.y &&
@@ -84,8 +85,10 @@ function move_commands(cmd, username, bot) {
     } else {
       bot.chat("使用方法: load [file name] [-r/-u/-a/-help]");
     }
-  }
-  else {
+  }else if(command == "tpme"){
+    // bot.chat(`/tp '${bot.username}' '${username}'`);
+    bot.chat(`/tp ${bot.username} ${username}`)
+  }else {
     return true;
   }
 }
