@@ -6162,15 +6162,37 @@
       "isPassablePlace": true
     },
     {
-      "block": "grass_block",
+      "block": "air",
       "position": {
         "x": 95,
         "y": 88,
         "z": -192
       },
-      "tag": "通常ブロック",
-      "isPassableBlockType": false,
+      "tag": "空気",
+      "isPassableBlockType": true,
       "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 96,
+        "y": 89,
+        "z": -192
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 97,
+        "y": 89,
+        "z": -192
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": false
     },
     {
       "block": "air",
@@ -6214,7 +6236,7 @@
       },
       "tag": "通常ブロック",
       "isPassableBlockType": false,
-      "isPassablePlace": false
+      "isPassablePlace": true
     },
     {
       "block": "air",
@@ -6547,6 +6569,17 @@
       "isPassablePlace": false
     },
     {
+      "block": "bedrock",
+      "position": {
+        "x": 95,
+        "y": 88,
+        "z": -193
+      },
+      "tag": "通常ブロック",
+      "isPassableBlockType": false,
+      "isPassablePlace": true
+    },
+    {
       "block": "air",
       "position": {
         "x": 88,
@@ -6786,17 +6819,6 @@
       },
       "tag": "空気",
       "isPassableBlockType": true,
-      "isPassablePlace": true
-    },
-    {
-      "block": "grass_block",
-      "position": {
-        "x": 95,
-        "y": 88,
-        "z": -193
-      },
-      "tag": "通常ブロック",
-      "isPassableBlockType": false,
       "isPassablePlace": true
     },
     {
@@ -7163,15 +7185,26 @@
       "isPassablePlace": true
     },
     {
-      "block": "grass_block",
+      "block": "air",
       "position": {
         "x": 95,
         "y": 88,
         "z": -194
       },
-      "tag": "通常ブロック",
-      "isPassableBlockType": false,
+      "tag": "空気",
+      "isPassableBlockType": true,
       "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 96,
+        "y": 89,
+        "z": -194
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": false
     },
     {
       "block": "air",
@@ -7185,14 +7218,69 @@
       "isPassablePlace": true
     },
     {
-      "block": "grass_block",
+      "block": "air",
+      "position": {
+        "x": 96,
+        "y": 88,
+        "z": -194
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 97,
+        "y": 89,
+        "z": -194
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": false
+    },
+    {
+      "block": "air",
       "position": {
         "x": 95,
         "y": 87,
         "z": -194
       },
-      "tag": "通常ブロック",
-      "isPassableBlockType": false,
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 96,
+        "y": 87,
+        "z": -194
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 97,
+        "y": 88,
+        "z": -194
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": false
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 97,
+        "y": 88,
+        "z": -195
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
       "isPassablePlace": false
     },
     {
@@ -7218,15 +7306,70 @@
       "isPassablePlace": true
     },
     {
-      "block": "dirt",
+      "block": "air",
       "position": {
         "x": 95,
         "y": 86,
         "z": -194
       },
-      "tag": "通常ブロック",
-      "isPassableBlockType": false,
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 97,
+        "y": 87,
+        "z": -194
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 97,
+        "y": 87,
+        "z": -195
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
       "isPassablePlace": false
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 96,
+        "y": 86,
+        "z": -194
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 97,
+        "y": 86,
+        "z": -194
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 97,
+        "y": 86,
+        "z": -195
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
     },
     {
       "block": "air",
@@ -7240,14 +7383,58 @@
       "isPassablePlace": true
     },
     {
-      "block": "dirt",
+      "block": "air",
       "position": {
         "x": 95,
         "y": 85,
         "z": -194
       },
-      "tag": "通常ブロック",
-      "isPassableBlockType": false,
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 96,
+        "y": 85,
+        "z": -194
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 97,
+        "y": 85,
+        "z": -194
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 97,
+        "y": 85,
+        "z": -195
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
+      "isPassablePlace": true
+    },
+    {
+      "block": "air",
+      "position": {
+        "x": 98,
+        "y": 85,
+        "z": -195
+      },
+      "tag": "空気",
+      "isPassableBlockType": true,
       "isPassablePlace": false
     },
     {

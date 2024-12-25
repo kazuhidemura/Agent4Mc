@@ -12,8 +12,8 @@ const bot = mineflayer.createBot({
     host: 'localhost',
     // host: '192.168.10.11',
     port: 2025,
-    username: "Aqualuvia", //Aqua + fluere + via = 水 + 流れる + 道  = アクアルヴィア　　実際の時に使う
-    // username: "Flanovia", //flamma + nova + via = 火　+ 新しい　+　道(?) = フラノヴィア 　フレンドに見せるよう（）
+    // username: "Aqualuvia", //Aqua + fluere + via = 水 + 流れる + 道  = アクアルヴィア　　実際の時に使う
+    username: "Flanovia", //flamma + nova + via = 火　+ 新しい　+　道(?) = フラノヴィア 　フレンドに見せるよう（）
     version: false,
 });
 

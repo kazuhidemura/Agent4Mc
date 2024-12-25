@@ -1,0 +1,6 @@
+search.js
+ScanBlocksInRange: 視線を動かし周囲のブロックをスキャンしてリストに追加する関数。
+TaggedBlockList: スキャンしたブロック情報を保持するリスト。
+CalculateDirection: 視線の方向ベクトルを計算する関数。
+listTaggedBlockList: スキャンしたブロック情報を表示する関数。
+replaceTaggedBlocks: 指定されたブロックに置換する関数。
