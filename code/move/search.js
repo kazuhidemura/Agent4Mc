@@ -1,10 +1,9 @@
-let {TaggedBlockList ,MobsList} = require('./sharedData.js');
 const Vec3 = require("vec3");
 
 
 function ScanBlocksInRange(yawOffsetStart, yawOffsetEnd, pitchOffsetStart, pitchOffsetEnd, maxDistance, bot) {
-    const yawStep = 5; // 水平のスキャン間隔
-    const pitchStep = 5; // 垂直のスキャン間隔
+    const yawStep = 4; // 水平のスキャン間隔
+    const pitchStep = 4; // 垂直のスキャン間隔
   
     const baseYaw = bot.entity.yaw * (180 / Math.PI); // 現在の視線の水平角度（度）
     const basePitch = bot.entity.pitch * (180 / Math.PI); // 現在の視線の垂直角度（度）
@@ -30,25 +29,28 @@ function ScanBlocksInRange(yawOffsetStart, yawOffsetEnd, pitchOffsetStart, pitch
                 isPassablePlace: (() => {
                   // 上にある2つのブロックを取得
                   const upperBlocks = [
-                    TaggedBlockList.find(tagged => 
+                    global.TaggedBlockList_.find(tagged => 
                       tagged.position.x === block.position.x &&
                       tagged.position.y === block.position.y + 1 &&
                       tagged.position.z === block.position.z
                     ),
-                    TaggedBlockList.find(tagged => 
+                    global.TaggedBlockList_.find(tagged => 
                       tagged.position.x === block.position.x &&
                       tagged.position.y === block.position.y + 2 &&
                       tagged.position.z === block.position.z
                     ),
                   ];
-              
                   // 上2つのブロックがすべてisPassableBlockType === trueであるかを判定
                   return upperBlocks.every(upperBlock => upperBlock && upperBlock.isPassableBlockType);
                 })(),
+                chunk: {
+                  x: Math.floor(block.position.x / 16),
+                  z: Math.floor(block.position.z / 16)
+                }
               };            
   
             // 重複チェックと更新処理
-            const index = TaggedBlockList.findIndex(tagged =>
+            const index = global.TaggedBlockList_.findIndex(tagged =>
               tagged.position.x === TaggedBlock.position.x &&
               tagged.position.y === TaggedBlock.position.y &&
               tagged.position.z === TaggedBlock.position.z
@@ -56,11 +58,11 @@ function ScanBlocksInRange(yawOffsetStart, yawOffsetEnd, pitchOffsetStart, pitch
   
             if (index === -1) {
               // 重複がない場合は追加
-              TaggedBlockList.push(TaggedBlock);
+              global.TaggedBlockList_.push(TaggedBlock);
               console.log(`新規追加: ${block.name} @ ${block.position} (タグ: ${TaggedBlock.tag})`);
             } else {
               // 重複がある場合は更新
-              TaggedBlockList[index] = TaggedBlock;
+              global.TaggedBlockList_[index] = TaggedBlock;
               console.log(`更新: ${block.name} @ ${block.position} (タグ: ${TaggedBlock.tag})`);
             }
   
@@ -87,19 +89,19 @@ function ScanBlocksInRange(yawOffsetStart, yawOffsetEnd, pitchOffsetStart, pitch
   }
   
   function listTaggedBlockList() {
-    if (TaggedBlockList.length === 0) {
+    if (global.TaggedBlockList_.length === 0) {
       console.log('データはない！');
       return;
     }
   
     console.log('リスト:');
-    TaggedBlockList.forEach((tagged, index) => {
+    global.TaggedBlockList_.forEach((tagged, index) => {
       console.log(`${index + 1}: ${tagged.block} @ ${tagged.position}, タグ: ${tagged.tag}`);
     });
   }
   
   async function replaceTaggedBlocks(newBlockName ,AirTrigger ,isPassablePlaceTrigger ,bot) { //AirTrigger  T空気含む/F含まない //isPassablePlaceTrigger T isPassablePlaceがtrueの時/Fそうでない時
-    for (const taggedBlock of TaggedBlockList) {
+    for (const taggedBlock of global.TaggedBlockList_) {
       const position = taggedBlock.position;
   
       // チャットではなく、直接パケットでコマンドを送信

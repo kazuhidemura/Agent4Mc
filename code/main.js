@@ -7,6 +7,9 @@ const Vec3 = require("vec3");
 // import { commands } from './command-hub.mjs';
 const { commands } = require('./command-hub.js');
 
+global.TaggedBlockList_ = [];
+global.MobsList_= [];
+
 // Botの設定
 const bot = mineflayer.createBot({
     host: 'localhost',

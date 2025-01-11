@@ -1,8 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 let packageJson = require('../package.json');
-let {TaggedBlockList ,MobsList} = require('./sharedData.js');
-
 
 function save(filename) {
   const saveDir = path.join(__dirname, 'saves'); // savesフォルダのパス
@@ -16,8 +14,8 @@ function save(filename) {
 
   const save_data ={
     version:  packageJson.version,
-    blocks: TaggedBlockList,
-    mobs: MobsList
+    blocks: global.TaggedBlockList_,
+    mobs: global.MobsList_
   };
   
   // データを保存
@@ -47,13 +45,12 @@ function load(filename, bot) {
           bot.chat(`BotVer: ${packageJson.version}, DataVer: ${jsonData.version}`);
           bot.chat(`-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-`);
         }
-  
-        // デバッグ表示
-        for (const key in jsonData) {
-          if (jsonData.hasOwnProperty(key)) {
-            console.log(`${key}: ${JSON.stringify(jsonData[key])}`);
-          }
-        }
+        // // デバッグ表示
+        // for (const key in jsonData) {
+        //   if (jsonData.hasOwnProperty(key)) {
+        //     console.log(`${key}: ${JSON.stringify(jsonData[key])}`);
+        //   }
+        // }
   
         return jsonData; // JSONオブジェクトを返す
       } catch (error) {
