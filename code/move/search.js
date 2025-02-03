@@ -2,8 +2,8 @@ const Vec3 = require("vec3");
 
 
 function ScanBlocksInRange(yawOffsetStart, yawOffsetEnd, pitchOffsetStart, pitchOffsetEnd, maxDistance, bot) {
-    const yawStep = 4; // 水平のスキャン間隔
-    const pitchStep = 4; // 垂直のスキャン間隔
+    const yawStep = 5; // 水平のスキャン間隔
+    const pitchStep = 5; // 垂直のスキャン間隔
   
     const baseYaw = bot.entity.yaw * (180 / Math.PI); // 現在の視線の水平角度（度）
     const basePitch = bot.entity.pitch * (180 / Math.PI); // 現在の視線の垂直角度（度）
@@ -120,4 +120,69 @@ function ScanBlocksInRange(yawOffsetStart, yawOffsetEnd, pitchOffsetStart, pitch
     console.log(`.w.: ${AirTrigger}${isPassablePlaceTrigger}`);
 
   }
-module.exports = { ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection};
+
+  function addBlocksToTaggedBlockList(x1, y1, z1, x2, y2, z2, bot) {
+    if (!global.TaggedBlockList_) {
+        global.TaggedBlockList_ = [];
+    }
+
+    const minX = Math.min(x1, x2);
+    const maxX = Math.max(x1, x2);
+    const minY = Math.min(y1, y2);
+    const maxY = Math.max(y1, y2);
+    const minZ = Math.min(z1, z2);
+    const maxZ = Math.max(z1, z2);
+
+    for (let x = minX; x <= maxX; x++) {
+        for (let y = minY; y <= maxY; y++) {
+            for (let z = minZ; z <= maxZ; z++) {
+                const position = new Vec3(x, y, z);
+                const block = bot.blockAt(position);
+
+                if (block) {
+                    const TaggedBlock = {
+                        block: block.name,
+                        position: position,
+                        tag: block.name === "air" ? "空気" : "通常ブロック",
+                        isPassableBlockType: block.name === "air",
+                        isPassablePlace: (() => {
+                            const upperBlocks = [
+                                global.TaggedBlockList_.find(tagged =>
+                                    tagged.position.x === x &&
+                                    tagged.position.y === y + 1 &&
+                                    tagged.position.z === z
+                                ),
+                                global.TaggedBlockList_.find(tagged =>
+                                    tagged.position.x === x &&
+                                    tagged.position.y === y + 2 &&
+                                    tagged.position.z === z
+                                ),
+                            ];
+                            return upperBlocks.every(upperBlock => upperBlock && upperBlock.isPassableBlockType);
+                        })(),
+                        chunk: {
+                            x: Math.floor(x / 16),
+                            z: Math.floor(z / 16)
+                        }
+                    };
+
+                    // 重複チェックと更新
+                    const index = global.TaggedBlockList_.findIndex(tagged =>
+                        tagged.position.x === x &&
+                        tagged.position.y === y &&
+                        tagged.position.z === z
+                    );
+
+                    if (index === -1) {
+                        global.TaggedBlockList_.push(TaggedBlock);
+                        console.log(`新規追加: ${block.name} @ ${position} (タグ: ${TaggedBlock.tag})`);
+                    } else {
+                        global.TaggedBlockList_[index] = TaggedBlock;
+                        console.log(`更新: ${block.name} @ ${position} (タグ: ${TaggedBlock.tag})`);
+                    }
+                }
+            }
+        }
+    }
+}
+module.exports = { ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList};

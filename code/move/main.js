@@ -1,7 +1,8 @@
 const Vec3 = require("vec3");
 const {save, load } = require('./save.js');
+const {findPath} = require('./path.js');
 const {lookingUp, lookingDown, lookingRight, lookingLeft} = require('./move.js');
-const {ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection} = require('./search.js');
+const {ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList} = require('./search.js');
 // const AdvancedRLBot = require('./test.js');
 
 function move_commands(cmd, username, bot) {
@@ -11,9 +12,12 @@ function move_commands(cmd, username, bot) {
   const param = args[1];
   const param_2 = args[2];
   const param_3 = args[3];
+  const param_4 = args[4];
+  const param_5 = args[5];
+  const param_6 = args[6];
   if (command === "search") {
     bot.chat("観測");
-    ScanBlocksInRange(-40, 40, -60, 60, 20, bot);
+    ScanBlocksInRange(-60, 60, -40, 40, 20, bot);
     console.log(typeof global.TaggedBlockList_)
   } else if (command === "replace") {
     // 指定したブロックで置換
@@ -90,6 +94,15 @@ function move_commands(cmd, username, bot) {
   }else if (command == "tpme"){
     // bot.chat(`/tp '${bot.username}' '${username}'`);
     bot.chat(`/tp ${bot.username} ${username}`)
+  }else if (command == "get"){
+    addBlocksToTaggedBlockList(param, param_2, param_3, param_4, param_5, param_6, bot)
+  }else if (command == "path"){
+    const goal = { param, param_2, param_3};
+    const data = {}; // 必要に応じたデータ
+    const blocks = global.TaggedBlockList_;
+    const timeout = 30000; // 30秒
+    const path = findPath(goal, data, blocks, timeout, bot);
+    console.log(path);
   }else if (command == "test"){
     for (const key in global.TaggedBlockList_) {
       if (global.TaggedBlockList_.hasOwnProperty(key)) {
@@ -101,6 +114,7 @@ function move_commands(cmd, username, bot) {
     // rlBot.train();
   }else if (command == "test2"){
     // rlBot.saveQTable("qtable.json");
+    console.log(bot.entity.position)
   }else if (command == "test3"){
     // rlBot.loadQTable("qtable.json");
   }else {
