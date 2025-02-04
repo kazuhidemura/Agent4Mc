@@ -97,7 +97,7 @@ function move_commands(cmd, username, bot) {
   }else if (command == "get"){
     addBlocksToTaggedBlockList(param, param_2, param_3, param_4, param_5, param_6, bot)
   }else if (command == "path"){
-    const goal = { param, param_2, param_3};
+    const goal = { x:param, y:param_2, z:param_3};
     const data = {}; // 必要に応じたデータ
     const blocks = global.TaggedBlockList_;
     const timeout = 30000; // 30秒
@@ -116,7 +116,8 @@ function move_commands(cmd, username, bot) {
     // rlBot.saveQTable("qtable.json");
     console.log(bot.entity.position)
   }else if (command == "test3"){
-    // rlBot.loadQTable("qtable.json");
+    bot.chat('/execute as Aotumuri run say !load 4path -r');
+    bot.chat('/execute as Aotumuri run say !path 108 83 -189');    
   }else {
     return true;
   }
