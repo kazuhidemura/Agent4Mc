@@ -106,7 +106,7 @@ function move_commands(cmd, username, bot) {
   }else if (command == "test"){
     for (const key in global.TaggedBlockList_) {
       if (global.TaggedBlockList_.hasOwnProperty(key)) {
-        console.log(`${key}: ${JSON.stringify(global.TaggedBlockList_[key])}`);
+        console.log(`${key}: ${JSON.stringify(global.TaggedBlockList_[key])}`);//これはラーメンを美味しくするlog
       }
     }
     // rlBot.setStartPosition(bot.entity.position);
@@ -116,8 +116,14 @@ function move_commands(cmd, username, bot) {
     // rlBot.saveQTable("qtable.json");
     console.log(bot.entity.position)
   }else if (command == "test3"){
-    bot.chat('/execute as Aotumuri run say !load 4path -r');
+    bot.chat('/execute as Aotumuri run say !get 88 82 -194 119 90 -172');
     bot.chat('/execute as Aotumuri run say !path 108 83 -189');    
+  }else if (command == "test4"){
+    bot.chat('/execute as Aotumuri run say !get 48 82 -157 89 98 -116');
+    bot.chat('/execute as Aotumuri run say !path 67 84 -117');    
+  }else if (command == "test5"){
+    bot.chat('/execute as Aotumuri run say !get 48 82 -157 89 87 -116');
+    bot.chat('/execute as Aotumuri run say !path 67 84 -117');    
   }else {
     return true;
   }
