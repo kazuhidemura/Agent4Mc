@@ -122,6 +122,7 @@ function ScanBlocksInRange(yawOffsetStart, yawOffsetEnd, pitchOffsetStart, pitch
   }
 
   function addBlocksToTaggedBlockList(x1, y1, z1, x2, y2, z2, bot) {
+    console.log("ブロックの取得開始");
     if (!global.TaggedBlockList_) {
         global.TaggedBlockList_ = [];
     }
@@ -175,14 +176,40 @@ function ScanBlocksInRange(yawOffsetStart, yawOffsetEnd, pitchOffsetStart, pitch
 
                     if (index === -1) {
                         global.TaggedBlockList_.push(TaggedBlock);
-                        console.log(`新規追加: ${block.name} @ ${position} (タグ: ${TaggedBlock.tag})`);
+                        // console.log(`新規追加: ${block.name} @ ${position} (タグ: ${TaggedBlock.tag})`);
                     } else {
                         global.TaggedBlockList_[index] = TaggedBlock;
-                        console.log(`更新: ${block.name} @ ${position} (タグ: ${TaggedBlock.tag})`);
+                        // console.log(`更新: ${block.name} @ ${position} (タグ: ${TaggedBlock.tag})`);
                     }
                 }
             }
         }
     }
+    console.log("ブロックの取得終了");
 }
-module.exports = { ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList};
+function setPassablePlaceForBlocks(blockList) {
+  console.log("ブロックの再チェック開始");
+  return blockList.map(block => {
+      // (x, y+1, z) または (x, y+2, z) に `isPassableBlockType: true` のブロックがあるかチェック
+      const blockAbove1 = global.TaggedBlockList_.find(tagged =>
+          tagged.position.x === block.position.x &&
+          tagged.position.y === block.position.y + 1 &&
+          tagged.position.z === block.position.z
+      );
+
+      const blockAbove2 = global.TaggedBlockList_.find(tagged =>
+          tagged.position.x === block.position.x &&
+          tagged.position.y === block.position.y + 2 &&
+          tagged.position.z === block.position.z
+      );
+
+      const isPassable = (blockAbove1?.isPassableBlockType || blockAbove2?.isPassableBlockType) === true;
+      // `isPassablePlace` を設定した新しいオブジェクトを返す
+      return {
+          ...block, // 元のブロック情報をコピー
+          isPassablePlace: isPassable
+      };
+  });
+}
+
+module.exports = { ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList, setPassablePlaceForBlocks};

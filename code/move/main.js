@@ -1,8 +1,8 @@
 const Vec3 = require("vec3");
 const {save, load } = require('./save.js');
-const {findPath} = require('./path.js');
+const {findPath, splitedLayerPathFinder} = require('./path.js');
 const {lookingUp, lookingDown, lookingRight, lookingLeft} = require('./move.js');
-const {ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList} = require('./search.js');
+const {ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList, setPassablePlaceForBlocks} = require('./search.js');
 // const AdvancedRLBot = require('./test.js');
 
 function move_commands(cmd, username, bot) {
@@ -103,6 +103,16 @@ function move_commands(cmd, username, bot) {
     const timeout = 30000; // 30秒
     const path = findPath(goal, data, blocks, timeout, bot);
     console.log(path);
+  }else if (command == "path2"){
+    const goal = { x:param, y:param_2, z:param_3};
+    const data = {}; // 必要に応じたデータ
+    const blocks = global.TaggedBlockList_;
+    const timeout = 30000; // 30秒
+    const path = splitedLayerPathFinder(goal, data, blocks, timeout, bot);
+    console.log(path);
+  }else if(command == "sPP")
+  {
+    global.TaggedBlockList_ = setPassablePlaceForBlocks(global.TaggedBlockList_);
   }else if (command == "test"){
     for (const key in global.TaggedBlockList_) {
       if (global.TaggedBlockList_.hasOwnProperty(key)) {
@@ -122,8 +132,12 @@ function move_commands(cmd, username, bot) {
     bot.chat('/execute as Aotumuri run say !get 48 82 -157 89 98 -116');
     bot.chat('/execute as Aotumuri run say !path 67 84 -117');    
   }else if (command == "test5"){
-    bot.chat('/execute as Aotumuri run say !get 48 82 -157 89 87 -116');
+    bot.chat('/execute as Aotumuri run say !get 48 82 -157 89 88 -116');
     bot.chat('/execute as Aotumuri run say !path 67 84 -117');    
+  }else if (command == "test6"){
+    bot.chat('/execute as Aotumuri run say !get 48 82 -157 89 98 -116');
+    bot.chat('/execute as Aotumuri run say !sPP')
+    bot.chat('/execute as Aotumuri run say !path2 65 85 -141');    
   }else {
     return true;
   }

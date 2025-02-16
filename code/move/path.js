@@ -177,8 +177,12 @@ function findPath(goal, data, blocks, timeout, bot) {
     return null;
 }
 
-function findPath_2(goal, start, data, blocks, timeout, bot) {
+
+
+function findPath_2(goal, start, data, blocks, timeout, finalgoal, bot) {
     const startTime = Date.now();
+    goal.push(finalgoal);//つっこめ！
+    console.log('goal:',goal)
 
     // 座標オブジェクトをキー文字列に変換（例："90,91,-188"）
     function posToKey(pos) {
@@ -188,7 +192,7 @@ function findPath_2(goal, start, data, blocks, timeout, bot) {
     // ヒューリスティック：ここでは x, z のマンハッタン距離を採用
     function heuristic(pos, goals) {
         return Math.min(...goals.map(goal =>
-            Math.abs(pos.x - goal[0]) + Math.abs(pos.z - goal[2])
+            2*(Math.abs(pos.x - goal[0]) + Math.abs(pos.z - goal[2]))+Math.abs(pos.x - finalgoal.x) + Math.abs(pos.z - finalgoal.y)
         ));
     }
 
@@ -211,17 +215,29 @@ function findPath_2(goal, start, data, blocks, timeout, bot) {
     }
 
     function isGoalReached(current, goals) {
-        return goals.some(goal =>
-            current.x.toString() === goal[0].toString() &&
-            current.y.toString() === goal[1].toString() &&
-            current.z.toString() === goal[2].toString()
-        );
+        if (!goals || goals.length === 0) {
+            console.error("Error: goals is undefined or empty!");
+            return false;
+        }
+    
+        return goals.some(goal => {
+            if (!goal || goal.x === undefined || goal.y === undefined || goal.z === undefined) {
+                console.error("Error: Invalid goal format!", goal);
+                return false;
+            }
+    
+            return (
+                Number(current.x) === Number(goal.x) &&
+                Number(current.y) === Number(goal.y) &&
+                Number(current.z) === Number(goal.z)
+            );
+        });
     }
-
 
     // A* のための各種テーブルを初期化
     const openSet = [start];   // 探索対象ノードリスト
     const closedSet = {};      // 探索済みノードのキーの集合
+    const closedNodesList = []; // 探索済みノードのリストを追加
 
     const cameFrom = {};       // 経路復元用マップ： { 子ノードのキー: 親ノード }
 
@@ -238,7 +254,7 @@ function findPath_2(goal, start, data, blocks, timeout, bot) {
         // タイムアウトチェック
         if (Date.now() - startTime > timeout) {
             console.log("タイムアウトしました");
-            return [closedSet, null];
+            return [closedNodesList, null];
         }
 
         // openSet から fScore が最小のノードを選ぶ
@@ -252,7 +268,7 @@ function findPath_2(goal, start, data, blocks, timeout, bot) {
         }
 
         // ゴール到達の判定（座標が一致するかどうか）
-        if (isGoalReached(current, goals)) {
+        if (isGoalReached(current, goal)) {
             // 経路を再構成する
             const path = [current];
             let currentKey = posToKey(current);
@@ -264,12 +280,15 @@ function findPath_2(goal, start, data, blocks, timeout, bot) {
             }
             path.reverse();
             console.log(`${Date.now() - startTime}かかりました。`);
-            return [closedSet, path];
+            return [closedNodesList, path];
         }
 
         // 現在のノードを openSet から削除し、closedSet に追加
         openSet.splice(currentIndex, 1);
         closedSet[posToKey(current)] = true;
+        // console.log(".w.:",closedNodesList)
+        // console.log("current:",current)
+        closedNodesList.push(current);
 
         // 現在のノードの隣接（東西南北）の座標をチェック
         const directions = [
@@ -356,24 +375,11 @@ function findPath_2(goal, start, data, blocks, timeout, bot) {
 
     // openSet が空になった場合、経路は見つからなかった
     console.log('パスが見つかりませんでした')
-    return [closedSet, null];
+    return [closedNodesList, null];
 }
 
 
 function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
-
-    // 座標オブジェクトをキー文字列に変換（例："90,91,-188"）
-    function posToKey(pos) {
-        return `${pos.x},${pos.y},${pos.z}`;
-    }
-
-    // ヒューリスティック：ここでは x, z のマンハッタン距離を採用
-    function heuristic(pos, goals) {
-        return Math.min(...goals.map(goal =>
-            Math.abs(pos.x - goal[0]) + Math.abs(pos.z - goal[2])
-        ));
-    }
-
     // JSONのブロックデータから指定座標のブロックを取得
     // ※各ブロックは { block, position:{x,y,z}, tag, isPassableBlockType, isPassablePlace } という構造
     function getBlockAt(x, y, z) {
@@ -386,33 +392,46 @@ function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
         return foundBlock || null;
     }
 
-    function findClosestBlocks(blocks, targetPos, targetY) {
+    function findClosestBlocks(blocks, targetPos, targetY, closeList) {
+        console.log("Received blocks:", blocks.length); // 受け取ったブロックの数を確認
+    
         // 近いチャンクのブロックのみ取得
         let filteredMap = blocks.filter(block =>
             Math.abs(block.chunk.x - Math.floor(targetPos.x / 16)) <= 10 &&
             Math.abs(block.chunk.z - Math.floor(targetPos.z / 16)) <= 10
         );
-
+        console.log("After chunk filter:", filteredMap.length);
+        console.log("y =", targetY);
+    
+        // `closeList` の座標を `Set` に変換（高速検索のため）
+        const closeSet = new Set(closeList.map(node => `${node.x},${node.y},${node.z}`));
+    
         // 指定Y座標のブロックのみ取得し、通れるものだけを取得
         filteredMap = filteredMap.filter(block =>
             block.position.y === targetY &&
             block.isPassablePlace &&
-            !block.isPassableBlockType
+            !block.isPassableBlockType &&
+            !closeSet.has(`${block.position.x},${block.position.y},${block.position.z}`) // `closeList` にある座標を除外
         );
-
-        if (filteredMap.length === 0) return []; // 該当なし
-
+        console.log("After closeList filter:", filteredMap.length);
+    
+        if (filteredMap.length === 0) {
+            console.log("No valid blocks found!");
+            return []; // 該当なし
+        }
+    
         // 近い順にソート（マンハッタン距離）
         filteredMap.sort((a, b) => {
             const distA = Math.abs(targetPos.x - a.position.x) + Math.abs(targetPos.z - a.position.z);
             const distB = Math.abs(targetPos.x - b.position.x) + Math.abs(targetPos.z - b.position.z);
             return distA - distB;
         });
-
+    
+        console.log("Final sorted blocks:", filteredMap.slice(0, 10));
+    
         // 上位10個を返す
         return filteredMap.slice(0, 10);
-    }
-
+    }    
 
     const start = {
         x: Math.floor(bot.entity.position.x),
@@ -426,16 +445,21 @@ function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
         z: Math.floor(bot.entity.position.z)
     };
 
-    let markedBlock;
+    let markedBlock = [];
     let goalBlockList;
     let path;
-    let pathList;
-    let closeList;
+    let pathList = [];
+    let closeList = [];
     let closeSet = new Set(closeList.map(node => `${node.x},${node.y},${node.z}`));
-
+    let closeNode;    
     while (true) {
         //とりあえず上を見る
-        markedBlock = findClosestBlocks(blocks, currentpos, currentpos.y);
+        markedBlock = findClosestBlocks(blocks, currentpos, currentpos.y, closeList);
+        if(markedBlock.length === 0)
+        {
+            console.log("仮ゴールが見つかりませんでした。")
+            break;
+        }
         while (true) {
             //仮ゴールの周りを見て乗れる場所を探す
             goalBlockList = [];
@@ -466,7 +490,17 @@ function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
                     goalBlockList.push(targetPos);
                 }
             }
-            [closeNode, path] = findPath_2(goalBlockList, markedBlock[0], data, blocks, timeout, bot);
+            // console.log("markedBlock:",markedBlock[0])
+            const result = findPath_2(goalBlockList, currentpos, data, blocks, timeout, goal, bot);
+            // console.log("findPath_2 result:", result);
+            if (!result || !Array.isArray(result) || result.length !== 2) {
+                console.error("Error: findPath_2 returned an invalid result!", result);
+                return null; // エラー回避のため処理を終了
+            }
+
+            const [closeNode, path] = result;
+            console.log("closeNode:", closeNode);
+            console.log("path:", path);
             // `closeNode` の各要素を `closeList` に追加（重複は除外）
             for (const node of closeNode) {
                 const nodeKey = `${node.x},${node.y},${node.z}`;
@@ -475,6 +509,7 @@ function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
                     closeList.push(node); // `closeList` に追加
                 }
             }
+            console.log("closeList:", closeList);
             if (path === null) {
                 markedBlock.shift();
                 if (markedBlock.length === 0) {
@@ -487,11 +522,17 @@ function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
                 }
             } else {
                 pathList.push(path);
-                currentpos = markedBlock[0];
-
+                if(path[path.length-1]===goal){
+                    currentpos = goal;
+                }else{
+                    currentpos = { x: markedBlock[0].position.x, y: markedBlock[0].position.y, z: markedBlock[0].position.z };
+                    console.log(currentpos);
+                    // currentpos = markedBlock[0].position;
+                }
                 break;
             }
         }
+        console.log("currentpos.x:",currentpos.x)
         if (currentpos.x.toString() === goal.x && currentpos.y.toString() === goal.y && currentpos.z.toString() === goal.z) {
             pathList = pathList.flat();
             pathList.forEach(current => {
