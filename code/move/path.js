@@ -179,21 +179,22 @@ function findPath(goal, data, blocks, timeout, bot) {
 
 
 
-function findPath_2(goal, start, data, blocks, timeout, finalgoal, bot) {
+function findPath_2(goal, start, data, blocks, timeout, finalgoal , stepTrigger, closeList, bot) {
     const startTime = Date.now();
-    goal.push(finalgoal);//つっこめ！
+    // goal.push(finalgoal);//つっこめ！
     console.log('goal:',goal)
 
     // 座標オブジェクトをキー文字列に変換（例："90,91,-188"）
     function posToKey(pos) {
-        return `${pos.x},${pos.y},${pos.z}`;
+        const posKey = `${pos.x},${pos.y},${pos.z}`;
+        return posKey;
     }
 
     // ヒューリスティック：ここでは x, z のマンハッタン距離を採用
     function heuristic(pos, goals) {
-        return Math.min(...goals.map(goal =>
-            2*(Math.abs(pos.x - goal[0]) + Math.abs(pos.z - goal[2]))+Math.abs(pos.x - finalgoal.x) + Math.abs(pos.z - finalgoal.y)
-        ));
+        return Math.min(...goals.map(goal => {
+            return (Math.abs(pos.x - goal.x) + Math.abs(pos.z - goal.z)+Math.abs(pos.x - finalgoal.x) + Math.abs(pos.z - finalgoal.z));
+        }));
     }
 
     // JSONのブロックデータから指定座標のブロックを取得
@@ -219,9 +220,10 @@ function findPath_2(goal, start, data, blocks, timeout, finalgoal, bot) {
             console.error("Error: goals is undefined or empty!");
             return false;
         }
-    
+        let checkGoal = goals;
+        checkGoal.push(finalgoal);
         return goals.some(goal => {
-            if (!goal || goal.x === undefined || goal.y === undefined || goal.z === undefined) {
+            if (!checkGoal || goal.x === undefined || goal.y === undefined || goal.z === undefined) {
                 console.error("Error: Invalid goal format!", goal);
                 return false;
             }
@@ -237,7 +239,8 @@ function findPath_2(goal, start, data, blocks, timeout, finalgoal, bot) {
     // A* のための各種テーブルを初期化
     const openSet = [start];   // 探索対象ノードリスト
     const closedSet = {};      // 探索済みノードのキーの集合
-    const closedNodesList = []; // 探索済みノードのリストを追加
+    const closedNodesList = [];// 探索済みノードのリストを追加
+    let stepGoalList = [];     // 途中で発見したゴールリスト
 
     const cameFrom = {};       // 経路復元用マップ： { 子ノードのキー: 親ノード }
 
@@ -254,17 +257,41 @@ function findPath_2(goal, start, data, blocks, timeout, finalgoal, bot) {
         // タイムアウトチェック
         if (Date.now() - startTime > timeout) {
             console.log("タイムアウトしました");
-            return [closedNodesList, null];
+            return [closedNodesList, null, null];
         }
 
         // openSet から fScore が最小のノードを選ぶ
         let currentIndex = 0;
         let current = openSet[0];
+        console.log("openSet.length: ",openSet.length)
+        console.log("fScore: ",fScore)
         for (let i = 1; i < openSet.length; i++) {
+            console.log("check(",openSet[i],"): ",fScore[posToKey(openSet[i])],"::: now -> ", fScore[posToKey(current)]);
             if (fScore[posToKey(openSet[i])] < fScore[posToKey(current)]) {
                 current = openSet[i];
                 currentIndex = i;
             }
+        }
+        console.log("openSet: : ",openSet);
+        bot.chat(`/particle dust{color:[0.0,1.0,0.35],scale:3.01} ${current.x} ${current.y} ${current.z} 0 0 0 0 1 force`);
+
+        // 段差ゴールの処理
+        if (stepGoalList.length >= 1)
+        {
+            console.log("stepGoalList.length: ", stepGoalList.length)
+            current = stepGoalList[0];
+            let currentGoal = {x: current.x, y: current.y + 1, z: current.z};
+            const path = [current];
+            let currentKey = posToKey(current);
+            while (currentKey in cameFrom) {
+                current = cameFrom[currentKey];
+                currentKey = posToKey(current);
+                // bot.chat(`/particle dust{color:[1.0,0.0,0.35],scale:3.01} ${current.x} ${current.y} ${current.z} 0 0 0 0 1 force`);
+                path.push(current);
+            }
+            path.reverse();
+            console.log(`${Date.now() - startTime}かかりました。`);
+            return [closedNodesList, path, currentGoal];
         }
 
         // ゴール到達の判定（座標が一致するかどうか）
@@ -280,7 +307,7 @@ function findPath_2(goal, start, data, blocks, timeout, finalgoal, bot) {
             }
             path.reverse();
             console.log(`${Date.now() - startTime}かかりました。`);
-            return [closedNodesList, path];
+            return [closedNodesList, path, null];
         }
 
         // 現在のノードを openSet から削除し、closedSet に追加
@@ -305,9 +332,18 @@ function findPath_2(goal, start, data, blocks, timeout, finalgoal, bot) {
                 y: current.y,
                 z: current.z + dir.z
             };
-
             const neighborKey = posToKey(neighbor);
             if (closedSet[neighborKey]) continue; // すでに検証済みならスキップ
+
+            if(stepTrigger) {
+                const neighborBlock = getBlockAt(neighbor.x, neighbor.y, neighbor.z);
+                if(neighborBlock !== null && neighborBlock.isPassablePlace && neighborBlock.isPassableBlockType){
+                    console.log("neighborBlock: ",neighborBlock)
+                    if(closeList.some(item => item.x === neighbor.x && item.y === neighbor.y && item.z === neighbor.z)){
+                        stepGoalList.push(neighbor);
+                    }
+                }
+            }
 
             // 移動可能かの判定
             const floorBlock = getBlockAt(neighbor.x, neighbor.y - 1, neighbor.z);
@@ -375,7 +411,7 @@ function findPath_2(goal, start, data, blocks, timeout, finalgoal, bot) {
 
     // openSet が空になった場合、経路は見つからなかった
     console.log('パスが見つかりませんでした')
-    return [closedNodesList, null];
+    return [closedNodesList, null, null];
 }
 
 
@@ -392,6 +428,20 @@ function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
         return foundBlock || null;
     }
 
+    function spawnParticlesAtPath(path, bot) {
+        if (!path || !Array.isArray(path) || path.length === 0) {
+            console.error("Error: Invalid path!", path);
+            return;
+        }
+        for (const pos of path) {
+            if (!pos || typeof pos.x === "undefined" || typeof pos.y === "undefined" || typeof pos.z === "undefined") {
+                console.error("Skipping invalid position:", pos);
+                continue;
+            }
+            bot.chat(`/particle dust{color:[1.0,0.0,0.35],scale:3.01} ${pos.x} ${pos.y} ${pos.z} 0 0 0 0 1 force`);
+        }
+    }
+    
     function findClosestBlocks(blocks, targetPos, targetY, closeList) {
         console.log("Received blocks:", blocks.length); // 受け取ったブロックの数を確認
     
@@ -451,13 +501,35 @@ function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
     let pathList = [];
     let closeList = [];
     let closeSet = new Set(closeList.map(node => `${node.x},${node.y},${node.z}`));
-    let closeNode;    
+    let closeNode;
+    let currentGoal;
     while (true) {
         //とりあえず上を見る
         markedBlock = findClosestBlocks(blocks, currentpos, currentpos.y, closeList);
         if(markedBlock.length === 0)
         {
-            console.log("仮ゴールが見つかりませんでした。")
+            console.log("仮ゴールが見つかりませんでした。本当のゴールを検索します");
+            const result = findPath_2(goalBlockList, currentpos, data, blocks, timeout, goal, true, closeList, bot);
+
+            if (!result || !Array.isArray(result) || result.length !== 3) {
+                console.error("Error: findPath_2 returned an invalid result!", result);
+                return null; // エラー回避のため処理を終了
+            }
+
+            const [closeNode, path, currentGoal] = result;
+            console.log("closeNode:", closeNode);
+            console.log("path:", path);
+            spawnParticlesAtPath(path, bot); //綺麗にルートを表示する。
+            console.log(goal);
+            if (path !== null) {
+                pathList.push(path);
+                pathList = pathList.flat();
+                pathList.forEach(current => {
+                    bot.chat(`/particle dust{color:[1.0,0.0,0.35],scale:3.01} ${current.x} ${current.y} ${current.z} 0 0 0 0 1 force`);
+                });
+                return pathList;
+            }
+            console.log("なんも見つからなかったので諦めます");
             break;
         }
         while (true) {
@@ -491,16 +563,18 @@ function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
                 }
             }
             // console.log("markedBlock:",markedBlock[0])
-            const result = findPath_2(goalBlockList, currentpos, data, blocks, timeout, goal, bot);
+            const result = findPath_2(goalBlockList, currentpos, data, blocks, timeout, goal, true, closeList, bot);
             // console.log("findPath_2 result:", result);
-            if (!result || !Array.isArray(result) || result.length !== 2) {
+            if (!result || !Array.isArray(result) || result.length !== 3) {
                 console.error("Error: findPath_2 returned an invalid result!", result);
                 return null; // エラー回避のため処理を終了
             }
 
-            const [closeNode, path] = result;
+            const [closeNode, path, currentGoal] = result;
             console.log("closeNode:", closeNode);
             console.log("path:", path);
+            console.log("currentGoal:", currentGoal);
+            spawnParticlesAtPath(path, bot); //綺麗にルートを表示する。
             // `closeNode` の各要素を `closeList` に追加（重複は除外）
             for (const node of closeNode) {
                 const nodeKey = `${node.x},${node.y},${node.z}`;
@@ -518,6 +592,7 @@ function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
                         currentpos = start;
                     } else {
                         currentpos = pathList[pathList.length-1][0]
+                        break;
                     }
                 }
             } else {
@@ -525,9 +600,14 @@ function splitedLayerPathFinder(goal, data, blocks, timeout, bot) {
                 if(path[path.length-1]===goal){
                     currentpos = goal;
                 }else{
-                    currentpos = { x: markedBlock[0].position.x, y: markedBlock[0].position.y, z: markedBlock[0].position.z };
-                    console.log(currentpos);
-                    // currentpos = markedBlock[0].position;
+                    if(currentGoal === null){
+                        currentpos = { x: markedBlock[0].position.x, y: markedBlock[0].position.y +1, z: markedBlock[0].position.z };
+                        console.log(currentpos);
+                        // currentpos = markedBlock[0].position;
+                    }else{
+                        currentpos = { x: currentGoal.x, y: currentGoal.y , z: currentGoal.z };
+                        console.log(currentpos);
+                    }
                 }
                 break;
             }
