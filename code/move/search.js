@@ -203,7 +203,7 @@ function setPassablePlaceForBlocks(blockList) {
           tagged.position.z === block.position.z
       );
 
-      const isPassable = (blockAbove1?.isPassableBlockType || blockAbove2?.isPassableBlockType) === true;
+      const isPassable = (blockAbove1?.isPassableBlockType && blockAbove2?.isPassableBlockType) === true;
       // `isPassablePlace` を設定した新しいオブジェクトを返す
       return {
           ...block, // 元のブロック情報をコピー
@@ -212,4 +212,60 @@ function setPassablePlaceForBlocks(blockList) {
   });
 }
 
-module.exports = { ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList, setPassablePlaceForBlocks};
+function countSurfaceArea(blockList){
+  function getBlockAt(x, y, z) {
+    // console.log(`検索中: x=${x}, y=${y}, z=${z}`);
+    const foundBlock = blockList.find(block =>
+        block.position.x === x &&
+        block.position.y === y &&
+        block.position.z === z
+    );
+    // if (!foundBlock) {
+    //     console.log(`座標 [${x}, ${y}, ${z}] は存在しません`);
+    // }else
+    // {
+    //     bot.chat(`/execute as Aotumuri at Aotumuri run particle dust{color:[1.0,0.0,0.35],scale:3.01} ${x} ${y+1} ${z} 0 0 0 0 1 force`);
+    // }
+    return foundBlock || null;
+  }
+  console.log("ブロック表面積のカウント開始");
+  let Allcounter = 0;//空気を含めない
+  let SAcounter = 0;
+  blockList.map(block => {
+    if(!block.isPassableBlockType) 
+    {
+      Allcounter += 1;
+      const directions = [
+          { x: 1, y: 0, z: 0 },
+          { x: -1, y: 0, z: 0 },
+          { x: 0, y: 0, z: 1 },
+          { x: 0, y: 0, z: -1 },
+          { x: 0, y: -1, z: 0 },
+          { x: 0, y: 1, z: 0 }
+      ];
+      for (const dir of directions) {
+          // 隣接ノード（横方向移動）
+          const neighbor = getBlockAt(
+              block.position.x + dir.x,
+              block.position.y + dir.y,
+              block.position.z + dir.z
+          )
+          if (!neighbor || !neighbor.isPassableBlockType) continue;
+          SAcounter += 1;
+      }
+    }
+  });
+  console.log("表面積:",SAcounter);
+  console.log("ブロック表面積のカウント終了");
+  return [SAcounter, Allcounter];
+}
+
+function countComplexity(blockList){
+  console.log("複雑度の計測を開始");
+  const [SA, Allcounter] = countSurfaceArea(blockList);
+  console.log(Allcounter)
+  const complexity = SA / Allcounter;
+  console.log("複雑度:",complexity);
+  console.log("複雑度の計測を終了");
+}
+module.exports = { ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList, setPassablePlaceForBlocks, countSurfaceArea, countComplexity};

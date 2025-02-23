@@ -2,7 +2,7 @@ const Vec3 = require("vec3");
 const {save, load } = require('./save.js');
 const {findPath, splitedLayerPathFinder} = require('./path.js');
 const {lookingUp, lookingDown, lookingRight, lookingLeft} = require('./move.js');
-const {ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList, setPassablePlaceForBlocks} = require('./search.js');
+const {ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList, setPassablePlaceForBlocks, countSurfaceArea, countComplexity} = require('./search.js');
 // const AdvancedRLBot = require('./test.js');
 
 function move_commands(cmd, username, bot) {
@@ -110,9 +110,178 @@ function move_commands(cmd, username, bot) {
     const timeout = 30000; // 30秒
     const path = splitedLayerPathFinder(goal, data, blocks, timeout, bot);
     console.log(path);
-  }else if(command == "sPP")
-  {
+  }else if(command == "sPP"){
     global.TaggedBlockList_ = setPassablePlaceForBlocks(global.TaggedBlockList_);
+  }else if(command == "cSA"){
+    countSurfaceArea(global.TaggedBlockList_);
+  }else if(command == "cc"){
+    countComplexity(global.TaggedBlockList_);
+  }else if(command == "cmdPack"){
+    bot.chat("実験用のワールドでのみ正常に機能します。")
+    console.log(param);
+    if(param === '0'){
+      bot.chat("cmdPack: 0 :: フラット")
+      if(param_2 === '0'){
+        bot.chat("/tp -30 103 1");
+        bot.chat('/execute as Aotumuri run say !get -49 102 1 -11 117 39');
+        bot.chat('/execute as Aotumuri run say !sPP');
+        bot.chat('/execute as Aotumuri run say !cc');
+      }else if(param_2 === '1'){
+        bot.chat("/tp Aotumuri -30 150 19 0 90");
+      }else if(param_2 === '2'){
+        bot.chat('/execute as Aotumuri run say !path -30 103 39');
+      }else if(param_2 === '3'){
+        bot.chat('/execute as Aotumuri run say !path2 -30 103 39');
+      }else{
+        bot.chat('その番号は存在しません');
+      }
+    }else if(param === '1'){
+      bot.chat("cmdPack: 1 :: ちょっとした高低差")
+      if(param_2 === '0'){
+        bot.chat("/tp 20 103 1");
+        bot.chat('/execute as Aotumuri run say !get 1 102 1 39 117 39');
+        bot.chat('/execute as Aotumuri run say !sPP');
+        bot.chat('/execute as Aotumuri run say !cc');
+      }else if(param_2 === '1'){
+        bot.chat("/tp Aotumuri 20 150 19 0 90");
+      }else if(param_2 === '2'){
+        bot.chat('/execute as Aotumuri run say !path 20 103 39');
+      }else if(param_2 === '3'){
+        bot.chat('/execute as Aotumuri run say !path2 20 103 39');
+      }else{
+        bot.chat('その番号は存在しません');
+      }
+    }else if(param === '2'){
+      bot.chat("cmdPack: 2 :: すこしの高低差")
+      if(param_2 === '0'){
+        bot.chat("/tp 70 103 1");
+        bot.chat('/execute as Aotumuri run say !get 51 102 1 89 117 39');
+        bot.chat('/execute as Aotumuri run say !sPP');
+        bot.chat('/execute as Aotumuri run say !cc');
+      }else if(param_2 === '1'){
+        bot.chat("/tp Aotumuri 70 150 19 0 90");
+      }else if(param_2 === '2'){
+        bot.chat('/execute as Aotumuri run say !path 70 103 39');
+      }else if(param_2 === '3'){
+        bot.chat('/execute as Aotumuri run say !path2 70 103 39');
+      }else{
+        bot.chat('その番号は存在しません');
+      }
+    }else if(param === '3'){
+      bot.chat("cmdPack: 3 :: すこしの高低差")
+      if(param_2 === '0'){
+        bot.chat("/tp 101 103 1");
+        bot.chat('/execute as Aotumuri run say !get 101 102 1 139 117 39');
+        bot.chat('/execute as Aotumuri run say !sPP');
+        bot.chat('/execute as Aotumuri run say !cc');
+      }else if(param_2 === '1'){
+        bot.chat("/tp Aotumuri 120 150 19 0 90");
+      }else if(param_2 === '2'){
+        bot.chat('/execute as Aotumuri run say !path 139 110 39');
+      }else if(param_2 === '3'){
+        bot.chat('/execute as Aotumuri run say !path2 139 110 39');
+      }else{
+        bot.chat('その番号は存在しません');
+      }
+    }else if(param === '4'){
+      bot.chat("cmdPack: 4 :: ノイズ")
+      if(param_2 === '0'){
+        bot.chat("/tp 101 106 51");
+        bot.chat('/execute as Aotumuri run say !get 101 102 51 139 117 89');
+        bot.chat('/execute as Aotumuri run say !sPP');
+        bot.chat('/execute as Aotumuri run say !cc');
+      }else if(param_2 === '1'){
+        bot.chat("/tp Aotumuri 120 150 69 0 90");
+      }else if(param_2 === '2'){
+        bot.chat('/execute as Aotumuri run say !path 139 107 89');
+      }else if(param_2 === '3'){
+        bot.chat('/execute as Aotumuri run say !path2 139 107 89');
+      }else{
+        bot.chat('その番号は存在しません');
+      }
+    }else if(param === '5'){
+      bot.chat("cmdPack: 5 :: ノイズ")
+      if(param_2 === '0'){
+        bot.chat("/tp 51 103 51");
+        bot.chat('/execute as Aotumuri run say !get 51 102 51 89 117 89');
+        bot.chat('/execute as Aotumuri run say !sPP');
+        bot.chat('/execute as Aotumuri run say !cc');
+      }else if(param_2 === '1'){
+        bot.chat("/tp Aotumuri 70 150 69 0 90");
+      }else if(param_2 === '2'){
+        bot.chat('/execute as Aotumuri run say !path 89 103 89');
+      }else if(param_2 === '3'){
+        bot.chat('/execute as Aotumuri run say !path2 89 103 89');
+      }else{
+        bot.chat('その番号は存在しません');
+      }
+    }else if(param === '6'){
+      bot.chat("cmdPack: 6 :: ノイズ")
+      if(param_2 === '0'){
+        bot.chat("/tp 1 104 51");
+        bot.chat('/execute as Aotumuri run say !get 1 102 51 39 117 89');
+        bot.chat('/execute as Aotumuri run say !sPP');
+        bot.chat('/execute as Aotumuri run say !cc');
+      }else if(param_2 === '1'){
+        bot.chat("/tp Aotumuri 20 150 69 0 90");
+      }else if(param_2 === '2'){
+        bot.chat('/execute as Aotumuri run say !path 39 103 89');
+      }else if(param_2 === '3'){
+        bot.chat('/execute as Aotumuri run say !path2 39 103 89');
+      }else{
+        bot.chat('その番号は存在しません');
+      }
+    }else if(param === '7'){
+      bot.chat("cmdPack: 7 :: ノイズ")
+      if(param_2 === '0'){
+        bot.chat("/tp 1 104 101");
+        bot.chat('/execute as Aotumuri run say !get 1 102 101 39 117 139');
+        bot.chat('/execute as Aotumuri run say !sPP');
+        bot.chat('/execute as Aotumuri run say !cc');
+      }else if(param_2 === '1'){
+        bot.chat("/tp Aotumuri 20 150 119 0 90");
+      }else if(param_2 === '2'){
+        bot.chat('/execute as Aotumuri run say !path 39 104 139');
+      }else if(param_2 === '3'){
+        bot.chat('/execute as Aotumuri run say !path2 39 104 139');
+      }else{
+        bot.chat('その番号は存在しません');
+      }
+    }else if(param === '8'){
+      bot.chat("cmdPack: 8 :: 階層")
+      if(param_2 === '0'){
+        bot.chat("/tp 70 104 101");
+        bot.chat('/execute as Aotumuri run say !get 51 102 101 89 117 139');
+        bot.chat('/execute as Aotumuri run say !sPP');
+        bot.chat('/execute as Aotumuri run say !cc');
+      }else if(param_2 === '1'){
+        bot.chat("/tp Aotumuri 70 150 119 0 90");
+      }else if(param_2 === '2'){
+        bot.chat('/execute as Aotumuri run say !path 70 112 101');
+      }else if(param_2 === '3'){
+        bot.chat('/execute as Aotumuri run say !path2 70 112 101');
+      }else{
+        bot.chat('その番号は存在しません');
+      }
+    }else if(param === '9'){
+      bot.chat("cmdPack: 8 :: 塔")
+      if(param_2 === '0'){
+        bot.chat("/tp 108 103 102");
+        bot.chat('/execute as Aotumuri run say !get 101 102 101 139 117 139');
+        bot.chat('/execute as Aotumuri run say !sPP');
+        bot.chat('/execute as Aotumuri run say !cc');
+      }else if(param_2 === '1'){
+        bot.chat("/tp Aotumuri 120 150 119 0 90");
+      }else if(param_2 === '2'){
+        bot.chat('/execute as Aotumuri run say !path 115 104 115');
+      }else if(param_2 === '3'){
+        bot.chat('/execute as Aotumuri run say !path2 115 104 115');
+      }else{
+        bot.chat('その番号は存在しません');
+      }
+    }else{
+      bot.chat('その番号は存在しません');
+    }
   }else if (command == "test"){
     for (const key in global.TaggedBlockList_) {
       if (global.TaggedBlockList_.hasOwnProperty(key)) {
@@ -135,9 +304,13 @@ function move_commands(cmd, username, bot) {
     bot.chat('/execute as Aotumuri run say !get 48 82 -157 89 88 -116');
     bot.chat('/execute as Aotumuri run say !path 67 84 -117');    
   }else if (command == "test6"){
-    bot.chat('/execute as Aotumuri run say !get 48 82 -157 89 98 -116');
-    bot.chat('/execute as Aotumuri run say !sPP')
+    bot.chat('/execute as Aotumuri run say !get 48 83 -154 86 98 -116');
+    bot.chat('/execute as Aotumuri run say !sPP');
     bot.chat('/execute as Aotumuri run say !path2 65 85 -141');    
+  }else if (command == "test6_2"){
+    bot.chat('/execute as Aotumuri run say !get 48 83 -154 86 98 -116');
+    bot.chat('/execute as Aotumuri run say !sPP');
+    bot.chat('/execute as Aotumuri run say !path 65 85 -141');    
   }else {
     return true;
   }
