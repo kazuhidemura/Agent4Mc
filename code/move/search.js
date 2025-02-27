@@ -231,10 +231,11 @@ function countSurfaceArea(blockList){
   console.log("ブロック表面積のカウント開始");
   let Allcounter = 0;//空気を含めない
   let SAcounter = 0;
+  const uniquePairs = new Set(blockList.map(block => `${block.position.x}-${block.position.z}`));
+  Allcounter = uniquePairs.size;
   blockList.map(block => {
     if(!block.isPassableBlockType) 
     {
-      Allcounter += 1;
       const directions = [
           { x: 1, y: 0, z: 0 },
           { x: -1, y: 0, z: 0 },
@@ -267,5 +268,6 @@ function countComplexity(blockList){
   const complexity = SA / Allcounter;
   console.log("複雑度:",complexity);
   console.log("複雑度の計測を終了");
+  return complexity;
 }
 module.exports = { ScanBlocksInRange, listTaggedBlockList, replaceTaggedBlocks ,CalculateDirection, addBlocksToTaggedBlockList, setPassablePlaceForBlocks, countSurfaceArea, countComplexity};
